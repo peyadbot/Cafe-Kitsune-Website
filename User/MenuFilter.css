@@ -1,0 +1,59 @@
+.category{
+  overflow: visible;
+  padding-bottom: 1px;
+  border-bottom: 3px solid #212A2F;
+}
+
+.category ul{
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+.category li{
+  list-style-type: none;
+  margin: 0 8px;
+}
+
+#coffee,
+#merch {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.22;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s ease-in;
+  border-width: 0;
+  color: #212A2F;
+  font-weight: 500;
+}
+
+.category a :hover{
+  cursor: pointer;
+}
+
+/*filter section*/
+.filterBtn{
+  padding-top: 10px;
+}
+
+.filterBtn button{
+  background: none;
+  margin: 10px;
+  border-radius: 30px;
+  width: 10em;
+  padding:1em;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.filterBtn button:hover{
+  cursor: pointer;
+  background: #E13535;
+  color:#fafafa;
+}

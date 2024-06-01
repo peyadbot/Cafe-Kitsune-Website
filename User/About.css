@@ -1,0 +1,43 @@
+/*Style the header and Navigation */
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #faf9f6;
+  color: #333;
+  margin: 0;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.box {
+  flex: 1;
+}
+
+/* Style the main content section */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+/* Style the Kitsune Musique section */
+h2:last-of-type {
+  margin-bottom: 0 px;
+}
+
+h2:last-of-type + p:before {
+  content: "";
+  display: block;
+  background-color: #ddd;
+  margin: 30px 0;
+}

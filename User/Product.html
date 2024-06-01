@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="IndexHead.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!--js and icons-->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title>Café Kitsuné - Coffee</title>
+  <style>
+    * {
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #EBF5EE;
+    }
+
+    .navSection,
+    .logoSection,
+    .accSection {
+      color: #212A2F;
+    }
+
+
+    .container {
+      padding-top: 100px;
+      display: flex;
+      width: 100%;
+      height: 600px;
+      align-items: center;
+
+    }
+
+    .imageSec {
+      flex: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imageSec img {
+      width: 80%;
+      transition: width 1.5s;
+    }
+
+    .imageSmall img {
+      width: 30%;
+      
+    }
+
+    .infoSec {
+
+      flex: 40%;
+      margin: 0 40px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    #sub {
+      color: gray;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    #price {
+      font-weight: 500;
+    }
+
+    .selector {
+      margin: 20px 0;
+    }
+
+    .label {
+      text-transform: uppercase;
+      display: block;
+      font-size: 16px;
+      color: gray;
+    }
+
+    .dialog {
+      width: 30%;
+      padding: 80px;
+    }
+
+    #quantity,
+    #size,
+    #preperation {
+      border: none;
+      background-color: #EBF5EE;
+    }
+
+    button {
+      color: #fafafa;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 10px;
+      margin-top: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #E13535;
+    }
+
+    button:hover {
+      color: #E13535;
+      background-color: #fafafa;
+      font-weight: 500;
+      border: 1px solid #E13535;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .dialog {
+        width: inherit;
+      }
+
+      .imageSec img {
+        padding-top: 80px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <!--left nav section-->
+    <div class="headerFlex">
+      <nav class="navSection">
+        <ul>
+          <li><a href="Menu.html">shop</a></li>
+          <li><a href="About.html">about</a></li>
+          <li><a
+              href="https://www.google.com/maps/search/cafe+Kitsune+13+Stamford+Rd,+%2301-11+178905+Singapore/@1.2933188,103.8512456,17z/data=!3m1!4b1">location</a>
+          </li>
+          <li><a href="KitsuneMusique.html">Kitsune Musique</a></li>
+        </ul>
+      </nav>
+      <!--logo-->
+      <div class="logoSection">
+        <a href="Index.html"><img src="/images/logokopi.png"></a>
+        <p>Café Kitsuné</p>
+      </div>
+      <!--right nav section-->
+      <nav class="accSection">
+        <ul>
+          <li><a href="Checkout.html">cart</a></li>
+          <li><a href="Account.html">account</a></li>
+        </ul>
+        <a id="iconhover" href="SignIn.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icons">
+            <path fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="imageSec">
+        <img src="/images/VividBloomPDP_large.avif" alt="Coffee">
+      </div>
+      <div class="infoSec">
+        <p id="sub">Rwanda and Colombia</p>
+        <h1>Vivid Bloom</h1>
+        <p id="sub">ORIGIN</p>
+        <p id="price">RM 108.60</p>
+        <p>Floral coffees from Rwanda and Colombia for a beautiful, botanic blend.</p>
+
+        <form>
+          <div class="selector">
+            <label for="Quantity" class="label">Quantity</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+          </div>
+          <div class="selector">
+            <span class="label">Size</span>
+            <select name="size" id="size">
+              <option value="12oz">12oz</option>
+              <option value="2lb">2lb</option>
+              <option value="5lb">5lb</option>
+            </select>
+          </div>
+          <div class="selector">
+            <label class="label">Grind Type</label>
+            <select id="preperation" name="properties[Grind Type]">
+              <option value="Whole Bean">Whole Bean</option>
+              <option value="Espresso">Espresso</option>
+              <option value="Aeropress">Aeropress</option>
+              <option value="Single-cup Pourover">Single-cup Pourover</option>
+              <option value="Auto-drip Pourover">Auto-drip Pourover</option>
+              <option value="Steep + Release Brewer">Steep + Release Brewer</option>
+              <option value="French Press">French Press</option>
+              <option value="Cold Brew">Cold Brew</option>
+            </select>
+          </div>
+        </form>
+        <button>Add To Cart</button>
+      </div>
+    </div>
+    <div class="dialog">
+      <p>
+        Experience the exceptional flavors of Burundi's Yandaro Washing Station coffee. Built in 1986, this station
+        processes
+        coffee from over 3,000 smallholder farmers. With meticulous attention to detail, the cherries undergo rigorous
+        sorting,
+        fermentation, washing, and drying. The result is a clean, complex, and flavorful coffee. Brew it with a 1:16.5
+        ratio,
+        filtered water at 206-208℉, medium grind, and 3-3.5 minute brew time. Discover the remarkable taste of Yandaro
+        Washing
+        Station's Burundi coffee today.
+      </p>
+      <p>
+        The result is a clean, complex, and flavorful coffee. Brew it with a 1:16.5 ratio,
+        filtered water at 206-208℉, medium grind, and 3-3.5 minute brew time. Discover the remarkable taste of Yandaro
+        Washing
+        Station's Burundi coffee today.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="foot">
+
+    <!--&copy is basically copyright symbol-->
+    <nav>
+      <ul>
+        <li><a href="https://www.facebook.com/cafekitsuneparis/" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/kitsune" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/cafekitsune/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@cafekitsune?lang=en" target="_blank">Tik Tok</a></li>
+      </ul>
+    </nav>
+    <p>Copyrigth &copy; 2023 Cafe Kitsune . All rights reserved</p>
+
+  </footer>
+
+  <script>
+    $(function () {
+      var header = $(".headerFlex");
+      var body = $("body");
+      var images = $(".imageSec")
+
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          header.removeClass('headerFlex').addClass("headerColor");
+          header.addClass("transition");
+          body.css({
+            "background-color": "white",
+            "transition": "background-color 0.5s"
+          });
+          images.addClass("imageSmall");
+        } else {
+          header.removeClass("headerColor").addClass('headerFlex');
+          header.addClass("transition");
+          body.css({
+            "background-color": "",
+            "transition": "background-color 0.5s"
+          }); // Reset body background color and transition
+          images.removeClass("imageSmall");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

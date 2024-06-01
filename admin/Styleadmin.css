@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family-Merriweather+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --main-color: #212a2f;
+  --color-dark: #b0b0b0;
+  --text-grey: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 165px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 100;
+  background: var(--color-dark);
+}
+
+.side-header {
+  background: var(--main-color);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-header h2 {
+  color: #fafafa;
+}
+
+.profile {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profile-img {
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+  margin: 0 auto 0.5rem auto;
+  border: 3px solid var(--main-color);
+}
+
+.profile h3 {
+  color: #fafafa;
+}
+
+.profile small {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.sidebar {
+  overflow-y: auto;
+}
+
+.side-menu ul {
+  text-align: center;
+}
+
+.side-menu a {
+  display: block;
+  padding: 1.1rem 0rem;
+}
+
+.side-menu a:hover {
+  background: var(--main-color);
+}
+
+.side-menu a span {
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.side-menu a span,
+.side-menu a small {
+  color: #fafafa;
+}
+
+.main-content {
+  margin-left: 165px;
+  width: calc(100% - 165px);
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 60px;
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0/10%);
+  z-index: 99;
+}
+
+.header-content,
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  background-color: #fafafa;
+  z-index: 1;
+  height: 60px;
+}
+
+.header-content label:first-child span {
+  font-size: 1.3rem;
+}
+
+.header-menu {
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+}
+
+.header-menu label,
+.header-menu .notify-icon {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.header-menu label,
+.notify-icon span:first-child {
+  font-size: 1.3rem;
+}
+
+.notify-icon span:last-child {
+  position: absolute;
+  background: var(--main-color);
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user div {
+  height: 40px;
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+.user span:last-child {
+  display: inline-block;
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--text-grey);
+}
+
+main {
+  margin-top: 60px;
+}
+
+.page-header {
+  padding: 1.3rem 1rem;
+  background-color: #f1f4f9;
+}
+
+.page-header h1,
+.page-header small {
+  color: #74767d;
+}
+
+.page-content {
+  padding: 2rem 2rem;
+  height: 100vh;
+  background-color: #f1f4f9;
+}
+
+.analytics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.card {
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0/10%);
+  background: white;
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-head h2 {
+  color: #666;
+  font-size: 2rem;
+}
+
+.card-head span {
+  font-size: 3rem;
+  color: var(--text-grey);
+}
+
+.card-progress small {
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+
+.card-indicator {
+  margin: 0.7rem 0rem;
+  height: 10px;
+  border-radius: 4px;
+  background: #e9edf2;
+  overflow: hidden;
+}
+
+.indicator {
+  height: 10px;
+  border-radius: 4px;
+}
+
+.indicator.one {
+  background: rgb(10, 110, 110);
+}
+
+.indicator.two {
+  background: rgb(92, 136, 25);
+}
+
+.indicator.three {
+  background: rgb(116, 61, 172);
+}
+
+.indicator.four {
+  background: rgb(201, 172, 7);
+}
+
+.records {
+  box-shadow: 0px 5px 5px -5px rgb(0 0 0/10%);
+  background: white;
+  border-radius: 3px;
+}
+
+.record-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add,
+.browse {
+  display: flex;
+  align-items: center;
+}
+
+.add span {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  color: rgb(34, 34, 34);
+}
+
+input,
+button,
+select {
+  outline: none;
+}
+
+.add select,
+.browse input,
+.browse select {
+  height: 35px;
+  border: 1px solid var(--text-grey);
+  border-radius: 3px;
+  display: inline-block;
+  width: 100%;
+  margin-right: 0.8rem;
+  color: var(--text-grey);
+}
+
+.add button {
+  background: var(--main-color);
+  color: white;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0rem 1rem;
+  border: none;
+  font-weight: 600;
+}
+
+.add button:hover {
+  background-color: var(--color-dark);
+}
+
+.browse input {
+  width: 150px;
+  color: black;
+  padding: 0rem 0.5rem;
+}
+
+.browse select {
+  margin-left: 0.1rem;
+  width: 100px;
+  padding: 0rem 0.5rem;
+}
+
+.staff-table {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead tr {
+  background: #f1f4f9;
+}
+
+table thead th {
+  padding: 1rem 0rem;
+  text-align: left;
+  color: #333;
+}
+
+table thead th:first-child {
+  padding-left: 1rem;
+}
+
+table tbody td {
+  padding: 1.5rem 0rem;
+}
+
+table tbody tr {
+  border-bottom: 3px solid #f1f4f9;
+}
+
+table tbody td:first-child {
+  padding-left: 1rem;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.user a.logout-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-grey);
+  font-size: 1rem;
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.logout-link:hover {
+  text-decoration: none; /* Add underline on hover */
+}

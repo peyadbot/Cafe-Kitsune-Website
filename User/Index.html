@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Name of Coffee Brand for main tab-->
+  <title>Café Kitsuné - Homepage</title>
+  <!--CSS link for index.html (update the link)-->
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="stylesheet" type="text/css" href="IndexHead.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <!--font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!--js and icons-->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <!--left nav section-->
+    <div class="headerFlex">
+      <nav class="navSection">
+        <ul>
+          <li><a href="Menu.html">shop</a></li>
+          <li><a href="About.html">about</a></li>
+          <li><a href="https://www.google.com/maps/search/cafe+Kitsune+13+Stamford+Rd,+%2301-11+178905+Singapore/@1.2933188,103.8512456,17z/data=!3m1!4b1">location</a></li>
+          <li><a href="KitsuneMusique.html">Kitsune Musique</a></li>
+        </ul>
+      </nav>
+      <!--logo-->
+      <div class="logoSection">
+        <a href="Index.html"><img src="/images/logokopi.png"></a>
+        <p>Café Kitsuné</p>
+      </div>
+      <!--right nav section-->
+      <nav class="accSection">
+        <ul>
+          <li><a href="Checkout.html">cart</a></li>
+          <li><a href="Account.html">account</a></li>
+        </ul>
+        <a id="iconhover" href="SignIn.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icons">
+            <path fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
+            clip-rule="evenodd" />
+        </svg>
+        </a>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!--video-->
+    <div class="videocontainer">
+      <video autoplay loop="true" muted="1">
+        <source type="video/mp4" src="/Video/Maison Kitsuné Summer Party - Seoul Video Report.mp4">
+      </video>
+      <div class="overlay">
+        <h3>The Coolest Fox</h3>
+        <p>Now open in Kuala Lumpur</p>
+        <a href="Booking.html">Book Your Seat</a>
+      </div>
+    </div>
+    <!--hot menu-->
+    <div class="hMenuGrid">
+      <div class="hCard">
+        <a href="Product.html"><img src="/images/VividBloomPDP_large.avif" alt="Vivid Bloom" alt="img" /></a>
+        <figcaption>
+          <div>
+            <p class="hName">Vivid Bloom</p>
+          </div>
+          <div>
+            <p class="hDescription">
+              Floral coffees from Rwanda and Colombia for a beautiful, botanic blend.
+            </p>
+          </div>
+          <div class="hDetail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="hBtn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+      <div class="hCard">
+        <img src="/images/El_Jordan_2023-01_large.avif" alt="Vivid Bloom" />
+        <figcaption>
+          <div>
+            <p class="hName">El Jordan</p>
+          </div>
+          <div>
+            <p class="hDescription">
+              Represents our longest-standing Direct Trade relationship in Colombia.
+            </p>
+          </div>
+          <div class="hDetail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="hBtn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+      <!--quote-->
+      <div class="new">
+        <p>NEW ARRVALS</p>
+        <h2>It's Blomming Season</h2>
+        <p>Featuring the freshest in our beautiful range of floral coffees</p>
+        <a href="Menu.html">SHOP NOW</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="foot">
+
+    <!--&copy is basically copyright symbol-->
+    <nav>
+      <ul>
+        <li><a href="https://www.facebook.com/cafekitsuneparis/" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/kitsune" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/cafekitsune/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@cafekitsune?lang=en" target="_blank">Tik Tok</a></li>
+      </ul>
+    </nav>
+    <p>Copyrigth &copy; 2023 Cafe Kitsune . All rights reserved</p>
+
+  </footer>
+
+
+  <script>
+    $(function () {
+      var header = $(".headerFlex");
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          header.removeClass('headerFlex').addClass("headerColor");
+          header.addClass("transition");
+        } else {
+          header.removeClass("headerColor").addClass('headerFlex');
+          header.addClass("transition");
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

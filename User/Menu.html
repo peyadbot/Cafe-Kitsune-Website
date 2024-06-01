@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Café Kitsuné - Coffee Menu</title>
+  <link rel="stylesheet" href="Menu.css" />
+  <link rel="stylesheet" href="MenuFilter.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <!--gotu,michroma,robmono-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+  <header>
+
+    <!--left nav section-->
+    <div class="headerFlex">
+      <nav class="navSection">
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">about</a></li>
+          <li>
+            <a
+              href="https://www.google.com/maps/search/cafe+Kitsune+13+Stamford+Rd,+%2301-11+178905+Singapore/@1.2933188,103.8512456,17z/data=!3m1!4b1">location</a>
+          </li>
+          <li><a href="KitsuneMusique.html">Kitsune Musique</a></li>
+        </ul>
+      </nav>
+      <!--logo-->
+      <div class="logoSection">
+        <a href="Index.html"><img src="/images/logokopi.png"></a>
+        <p>Café Kitsuné</p>
+      </div>
+      <!--right nav section-->
+      <nav class="accSection">
+        <ul>
+          <li><a href="Checkout.html">cart</a></li>
+          <li><a href="Account.html">account</a></li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icons">
+          <a href="SignIn.html">
+            <path fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
+              clip-rule="evenodd" />
+          </a>
+        </svg>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <!--filter-->
+    <div class="category">
+      <nav>
+        <ul>
+          <li><a href="Menu.html" id="coffee" style="color: #E13535; border-bottom: 3px solid #E13535;">COFFEE</a></li>
+          <li><a href="Merch.html" id="merch">MERCH</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="filterBtn">
+      <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
+      <button class="btn" onclick="filterSelection('classic')"> Classics</button>
+      <button class="btn" onclick="filterSelection('origin')"> Origin</button>
+      <button class="btn" onclick="filterSelection('cold')"> Cold brew</button>
+      <button class="btn" onclick="filterSelection('set')"> Set</button>
+    </div>
+
+    <!--menu-->
+    <div class="card_grid">
+      <div class="card">
+        <a href="Product.html"><img src="/images/VividBloomPDP_large.avif" alt="Study" /></a>
+        <figcaption>
+          <div>
+            <p class="name">Vivid Bloom</p>
+          </div>
+          <div>
+            <p class="description">
+              Floral coffees from Rwanda and Colombia for a beautiful, botanic blend.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STCShopifyTrapperCreek_ProductImageTransparentPNG_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Trapper Creek Decaf</p>
+          </div>
+          <div>
+            <p class="description">
+              Swiss Water Process for decaf beans with unbeatable flavor and quality.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STCShopifyHollerMountain_ProductImageTransparentPNG_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Holler Mountain</p>
+          </div>
+          <div>
+            <p class="description">
+              Organic hometown favorite blend: perfect for espresso or daily drip.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STCShopifyHairbender_ProductImageTransparentPNG_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Hair Bender</p>
+          </div>
+          <div>
+            <p class="description">
+              Coffee with a Sweet, balanced, and versatile blend for any brew method.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STCShopifyFrenchRoast_ProductImageTransparentPNG_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">French Roast</p>
+          </div>
+          <div>
+            <p class="description">
+              Organic dark roast redefining classic with toasty, smoky richness.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STC-Shopify-PDP-PNG_mordecofe_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Ethiopia Mordecofe</p>
+          </div>
+          <div>
+            <p class="description">
+              Haile Gebre's leadership in Guji Highlands elevates region as quality coffee origin.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STC-Shopify-PDP-Peru_Churupampa_1_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Peru Churupampa</p>
+          </div>
+          <div>
+            <p class="description">
+              Tocto family's unwavering commitment to organic coffee and community at Finca Churupampa.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/STC-Shopify-Costa-Rica-Montes-De-Oro2021_Product-Image-Transparent-PNG_large.avif"
+          alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Montes De Oro</p>
+          </div>
+          <div>
+            <p class="description">
+              Fine coffee from Tarrazú, Costa Rica, with dedication of Emilio & Laura Gamboa at their farm and
+              micro-mill.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/ranchoo.png" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Rancho Carmen</p>
+          </div>
+          <div>
+            <p class="description">
+              Stumptown's exquisite Ecuadorian single origin from 35 producers in the southern province.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/huyeee.png" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Huye Mountain</p>
+          </div>
+          <div>
+            <p class="description">
+              David Rubanzangabo operates the Huye Mountain resulting in a bright coffee with a fine, balanced acidity.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/Roaster_sPickbadgeBies_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Bies Penantan</p>
+          </div>
+          <div>
+            <p class="description">
+              Rich, full-bodied coffee from women-led Ketiara Cooperative in Aceh, Sumatra.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/Hundred_Mile_Product_1_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Hundred Mile</p>
+          </div>
+          <div>
+            <p class="description">
+              A balanced, organic blend for a clean start to your day.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/homesteddd.png" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Homestead</p>
+          </div>
+          <div>
+            <p class="description">
+              A light, seasonal, and sweet blend of Direct Trade coffees to savor.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/Founders_Blend_Product_1_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Founder's Blend</p>
+          </div>
+          <div>
+            <p class="description">
+              A smooth, all-day drinker with certified organic coffees from Central and South America.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM68.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/El_Jordan_2023-01_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">El Jordan</p>
+          </div>
+          <div>
+            <p class="description">
+              The Jordan Group represents our longest-standing Direct Trade relationship in Colombia.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM 108.60</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/coldbrew.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Strange Magic</p>
+          </div>
+          <div>
+            <p class="description">
+              Looking for a plant-based pick-me-up but not quite in the mood for coffee? May we present: Strange Magic
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM49.90</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/Passport_Trio_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Passport Trio</p>
+          </div>
+          <div>
+            <p class="description">
+              Coffee trip around the world: coffees from Latin America, Indonesia, and Africa for a wild and delicious
+              ride.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM119.50</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+
+      <div class="card">
+        <img src="/images/Blend_Trio_large.avif" alt="Study" />
+        <figcaption>
+          <div>
+            <p class="name">Blend Trio</p>
+          </div>
+          <div>
+            <p class="description">
+              Three most popular blends for newbies or long-time fans. Perfect as a gift or to experience our iconic
+              coffees.
+            </p>
+          </div>
+          <div class="detail">
+            <div>
+              <p>RM119.50</p>
+            </div>
+            <div class="btn">
+              <button>add to cart</button>
+            </div>
+          </div>
+        </figcaption>
+      </div>
+  </main>
+
+  <footer class="foot">
+
+    <!--&copy is basically copyright symbol-->
+    <nav>
+      <ul>
+        <li><a href="https://www.facebook.com/cafekitsuneparis/" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/kitsune" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/cafekitsune/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@cafekitsune?lang=en" target="_blank">Tik Tok</a></li>
+      </ul>
+    </nav>
+    <p>Copyrigth &copy; 2023 Cafe Kitsune . All rights reserved</p>
+
+  </footer>
+
+  </section>
+</body>
+
+</html>

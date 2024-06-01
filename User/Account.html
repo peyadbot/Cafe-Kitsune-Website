@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Account</title>
+  <link rel="stylesheet" href="/User/Account.css">
+  <link rel="stylesheet" type="text/css" href="/User/header.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+
+    <!--left nav section-->
+    <div class="headerFlex">
+      <nav class="navSection">
+        <ul>
+          <li><a href="Menu.html">shop</a></li>
+          <li><a href="About.html">about</a></li>
+          <li>
+            <a
+              href="https://www.google.com/maps/search/cafe+Kitsune+13+Stamford+Rd,+%2301-11+178905+Singapore/@1.2933188,103.8512456,17z/data=!3m1!4b1">location</a>
+          </li>
+          <li><a href="KitsuneMusique.html">Kitsune Musique</a></li>
+        </ul>
+      </nav>
+      <!--logo-->
+      <div class="logoSection">
+        <a href="Index.html"><img src="/images/logokopi.png"></a>
+        <p>Café Kitsuné</p>
+      </div>
+      <!--right nav section-->
+      <nav class="accSection">
+        <ul>
+          <li><a href="Checkout.html">cart</a></li>
+          <li><a href="Account.html">account</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <div class="tabs">
+    <div class="tab-header">
+      <div class="active"><!--Left box-->
+        <i class="fa-solid fa-user"></i> Account details
+      </div>
+      <div>
+        <i class="fa-solid fa-credit-card"></i> Payment details
+      </div>
+      <div>
+        <i class="fa-solid fa-gift"></i> Rewards
+      </div>
+    </div>
+
+    <div class="tab-indicator"></div>
+
+    <div class="tab-content"><!--right box-->
+      <div class="text-white active">
+
+        <i class="fa-solid fa-user"></i>
+
+        <form>
+          <table width="640px">
+            <caption style="font-weight: bold; font-size: 20px; padding-bottom: 20px;">
+              Account details
+            </caption>
+            <tr>
+              <td class="label">
+                <label>Username</label>
+              </td>
+              <td class="iinput">
+                <p>Koala</p>
+              </td>
+            </tr><br>
+            <tr>
+              <td class="label">
+                <label>Name</label>
+              </td>
+              <td class="iinput">
+                <input type="text" class="input" value="Vastephen Orgon">
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label>Email</label>
+              </td>
+              <td class="iinput">
+                <input type="email" class="input" value="Vastephen@gmail.com">
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label>Phone Number</label>
+              </td>
+              <td class="iinput">
+                <input type="number" class="input" value="011394322748">
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label>Gender</label>
+              </td>
+              <td class="iinput">
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label>Birth of Birthday</label>
+              </td>
+              <td class="iinput">
+                <input type="date" class="input" value="1993-07-25">
+              </td>
+            </tr>
+          </table>
+          <button class="btn" type="submit"> Save </button>
+        </form>
+      </div>
+
+      <div class="text-white">
+        <i class="fa-solid fa-credit-card"></i>
+        <form>
+          <table width="640px">
+            <caption style="font-weight: bold; font-size: 20px; padding-bottom: 20px;">
+              Payment Details
+            </caption>
+            <tr>
+              <td class="label">
+                <label>Payment Method</label>
+              </td>
+              <td class="iinput">
+                <p>Visa - **** **** **** 1455</p>
+              </td>
+            </tr><br>
+            <tr>
+              <td class="label">
+                <label>Billing Address</label>
+              </td>
+              <td class="iinput">
+                <input type="text" class="input" value="8Th Floor Pangsapuri Vista Height Jln Mariamah Kampung Bahru">
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label>Zipcode</label>
+              </td>
+              <td class="iinput">
+                <!--limit to 5 digits-->
+                <input type="number" oninput="validateInput(this)" min="10000" max="99999" step="1" value="43800">
+              </td>
+            </tr>
+            <tr>
+              <td class="label">
+                <label>Billing Date</label>
+              </td>
+              <td class="iinput">
+                <p>30-06-2023</p>
+              </td>
+            </tr>
+          </table>
+          <button class="btn" type="submit"> Save </button>
+        </form>
+      </div>
+
+      <div class="text-white">
+        <i class="fa-solid fa-gift"></i>
+        <form>
+          <table width="640px">
+            <caption style="font-weight: bold; font-size: 20px; padding-bottom: 20px;">
+              Rewards
+            </caption>
+            <tr>
+              <td class="iinput">
+                <img src="/images/Coffe_cup.png">
+                <p style="text-align: center;">Free Medium cup</p>
+                <div style="text-align: center; padding-top: 10px;">
+                  <button type="submit" class="btn">
+                    Redeem
+                  </button>
+                </div>
+
+              </td>
+              <td class="iinput">
+                <img src="/images/Coffe_cup.png">
+                <p style="text-align: center;">Buy 1 Free 1</p>
+                <div style="text-align: center; padding-top: 10px;">
+                  <button type="submit" class="btn">
+                    Redeem
+                  </button>
+                </div>
+              </td>
+              <td class="iinput">
+                <img src="/images/Coffe_cup.png">
+                <p style="text-align: center;">50% off</p>
+                <div style="text-align: center; padding-top: 10px;">
+                  <button type="submit" class="btn">
+                    Redeem
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    /*to make class=text-white able to display based on which elements*/
+    let tabPanes = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
+
+    document.getElementsByClassName("active")[0].classList.remove("active");
+
+    for (let i = 0; i < tabPanes.length; i++) {
+
+      tabPanes[i].addEventListener("click", function () {
+
+        document.getElementsByClassName("active")[0].classList.remove("active");
+
+        tabPanes[i].classList.add("active");
+
+        document.getElementsByClassName("tab-indicator")[0].style.top = `calc(80px + ${i * 50}px)`;
+
+        document.getElementsByClassName("active")[0].classList.remove("active");
+
+        document.getElementsByClassName("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
+      });
+    }
+
+    
+    /*To enforce a strict limit of exactly five digits*/
+    function validateInput(input) {
+      if (input.value.length > 5) {
+        input.value = input.value.slice(0, 5); // Truncate input to 5 digits
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>

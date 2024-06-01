@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Michroma&family=Roboto+Mono:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+  <title>THANKYOU! - Kafe Kitsune</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      color: #fafafa;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      filter: brightness(50%);
+    }
+
+    .vidcontainer {
+      position: relative;
+      height: 100vh;
+    }
+
+    .message {
+      z-index: 1;
+      display: grid;
+      text-align: center;
+      width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .message h2 {
+      font-family: 'Gotu', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    .message p {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .btn button {
+      background: none;
+      margin: 10px;
+      border-radius: 30px;
+      width: 10em;
+      padding: 1em;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid;
+      transition: 0.4s;
+      font-weight: 700;
+    }
+
+    .btn button:hover {
+      cursor: pointer;
+      background: #E13535;
+      color: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="vidcontainer">
+    <video autoplay loop="true" muted="1">
+      <source type="video/mp4" src="/Video/Maison Kitsuné Summer Party - Seoul Video Report.mp4">
+    </video>
+    <div class="message">
+      <p>THANKYOU FOR YOUR PURCHASE</p>
+      <h2>It's thanks to customers like you that we can keep crafting our quality coffee</h2>
+      <p>here is a 20% discount off your next purchase</p>
+      <a class="btn" href="Index.html"><button>SHOP NOW</button></a>
+    </div>
+  </div>
+</body>
+
+</html>
